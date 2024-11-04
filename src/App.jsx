@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar.jsx";
 import Knopochka from "./components/button/Knopochka.jsx";
 import welcome from "./assets/welcome.png"
 import Carousel from "./components/carusel/Carousel.jsx";
+import Feedback from "./components/feedback/Feedback.jsx";
 
 const images = [
   "https://i.pinimg.com/control/564x/ee/ca/de/eecade9a4ccb35324114d037e3e91a88.jpg",
@@ -66,6 +67,20 @@ function App() {
                 <Carousel images={images2} />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="px-40 py-5 self-center">
+          <div className="max-w-7xl">
+            <div className="max-h-[60px] px-4 py-5 flex justify-start items-center">
+              <h2 className="text-2xl font-bold">Отзывы наших клиентов</h2>
+            </div>
+          </div>
+          <div className="flex flex-col gap-8">
+            <Feedback />
+            <Feedback />
+            <Feedback />
           </div>
         </div>
       </section>
