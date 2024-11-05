@@ -5,6 +5,7 @@ import Knopochka from "./components/button/Knopochka.jsx";
 import welcome from "./assets/welcome.png"
 import Carousel from "./components/carusel/Carousel.jsx";
 import Feedback from "./components/feedback/Feedback.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 const images = [
   "https://i.pinimg.com/control/564x/ee/ca/de/eecade9a4ccb35324114d037e3e91a88.jpg",
@@ -77,12 +78,11 @@ function App() {
               <h2 className="text-2xl font-bold">Отзывы наших клиентов</h2>
             </div>
           </div>
-          <div className="flex flex-col gap-8">
             <Feedback />
-            <Feedback />
-            <Feedback />
-          </div>
         </div>
+      </section>
+      <section>
+        <Footer/>
       </section>
     </>
   );
