@@ -16,12 +16,12 @@ const items = [
     {
         name: FaFacebook,
         icon: <FaFacebook />,
-        link: 'https://www.facebook.com'
+        link: 'https://pornworks.ai'
     },
     {
         name: FaInstagram,
         icon: <FaInstagram />,
-        link: 'https://www.instagram.com'
+        link: 'https://pornhub.com'
     },
     {
         name: FaYoutube,
