@@ -12,7 +12,7 @@ function NavBar() {
                 <ul className="flex gap-8 self-center">
                     <li className="text-black"><a href="/" className="p-3 py-1 text-sm  font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Главная</a></li>
                     <li className="text-black"><a href="/about" className="p-3 py-1 text-sm  font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">О нас</a></li>
-                    <li className="text-black"><a href="#" className="p-3 py-1 text-sm  font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Каталог</a></li>
+                    <li className="text-black"><a href="/catalog" className="p-3 py-1 text-sm  font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Каталог</a></li>
                     <li className="text-black"><a href="#" className="p-3 py-1 text-sm  font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Контакты</a></li>
                     <li className="text-black"><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_298_670)">
