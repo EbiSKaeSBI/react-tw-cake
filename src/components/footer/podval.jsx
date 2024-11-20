@@ -16,12 +16,12 @@ const items = [
     {
         name: FaFacebook,
         icon: <FaFacebook />,
-        link: 'https://pornworks.ai'
+        link: 'https://t.me/hamster_kombat_boT/start?startapp=kentId662135656'
     },
     {
         name: FaInstagram,
         icon: <FaInstagram />,
-        link: 'https://pornhub.com'
+        link: 'https://t.me/blum/app?startapp=ref_svqoaxj1K9'
     },
     {
         name: FaYoutube,

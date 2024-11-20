@@ -3,6 +3,7 @@ import Knopochka from "../components/button/Knopochka.jsx";
 import welcome from "../assets/welcome.png"
 import Carousel from "../components/carusel/Carousel.jsx";
 import Feedback from "../components/feedback/otziv.jsx";
+import Audi from "../components/Audi/Audio.jsx";
 
 
 const images = [
@@ -76,6 +77,7 @@ function main() {
             </div>
           </div>
             <Feedback />
+            <Audi src="../assets/femka.mp4"/>
         </div>
       </section>
     </>

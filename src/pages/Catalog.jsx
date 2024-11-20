@@ -23,7 +23,7 @@ const products = [
     },
     {
       id: 2,
-      name: 'Шоколадный торт',
+      name: 'Шоколадный фейерверк торт',
       price: 2500,
       available: 3,
       image: 'https://i.pinimg.com/control/564x/41/2b/42/412b4230f2f1c0d7b15c8afba1a6413e.jpg',
