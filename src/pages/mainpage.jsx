@@ -77,7 +77,6 @@ function main() {
             </div>
           </div>
             <Feedback />
-            <Audi src="../assets/femka.mp4"/>
         </div>
       </section>
     </>
