@@ -9,7 +9,6 @@ const section = [
         title: "Контакты",
         items: ['+1 (001) 981-76-17', 'info@logoipsum.com']
     }
-    
 ];
 
 const items = [
@@ -37,16 +36,16 @@ const items = [
 
 function Footer() {
     return (
-        <div className="w-full mt-24  text-black py-8 px-2">
+        <div className="w-full mt-24 text-black py-8 px-2">
             <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 border-b-2 border-gray-600 py-8">
                 {section.map((section, index) => (
                     <div key={index}>
-                        <h6 className='font-bold uppercase pt-2'>
+                        <h6 className='font-bold uppercase pt-2 md:text-lg'>
                             {section.title}
                         </h6>
                         <ul>
                             {section.items.map((item, i) => (
-                                <li key={i} className='py-1 text-black hover:text-gray-600 cursor-pointer'>
+                                <li key={i} className='py-1 text-black hover:text-gray-600 cursor-pointer md:text-sm'>
                                     {item}
                                 </li>
                             ))}
@@ -54,10 +53,10 @@ function Footer() {
                     </div>
                 ))}
                 <div className="col-span-2 pt-8 md:pt-2">
-                    <p className='font-bold uppercase'>
+                    <p className='font-bold uppercase md:text-lg'>
                         РАССЫЛКА О НОВЫХ ТОРТАХ
                     </p>
-                    <p className='py-4'>
+                    <p className='py-4 md:text-sm'>
                         Подпишитесь на нашу рассылку и будьте в курсе новых тортов!
                     </p>
                     <form className='flex flex-col sm:flex-row'>
@@ -67,10 +66,10 @@ function Footer() {
                 </div>
             </div>
             <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
-                <p>
+                <p className='md:text-sm'>
                     2024 vovik bakery
                 </p>
-                <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
+                <div className="flex justify-between sm:w-[300px] pt-4 text-2xl md:text-xl">
                     {items.map((x, index) => (
                         <a href={x.link} key={index} target="_blank" rel="noopener noreferrer" className='hover:text-gray-700 cursor-pointer'>
                             {x.icon}

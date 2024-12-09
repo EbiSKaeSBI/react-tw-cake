@@ -28,14 +28,14 @@ function main() {
   return (
     <>
       <section>
-        <div className="px-40 py-5 self-center">
-          <div className="max-w-7xl">
+        <div className="lg:px-40  md:px-20  py-5 self-center">
+          <div className="max-w-7xl mx-auto">
             <div className="min-h-[480px] relative">
               <img src={welcome} alt="" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 z-20 p-4   flex flex-col">
-                <div className="flex flex-col items-start gap-5 max-w-max translate-y-[284px]  ">
-                  <h1 className="text-5xl font-bold text-white">Добро пожаловать в нашу пекарню!</h1>
-                  <p className="text-base text-white">Уникальные торты для ваших особых моментов.</p>
+              <div className="absolute inset-0 z-20 p-4 flex flex-col">
+                <div className="flex flex-col items-start lg:gap-5 md:gap-3 max-w-max lg:translate-y-[284px] md:translate-y-[142  px]">
+                  <h1 className="lg:text-5xl font-bold text-white md:2xl">Добро пожаловать в нашу пекарню!</h1>
+                  <p className="lg:text-base text-white md:text-xs">Уникальные торты для ваших особых моментов.</p>
                   <Knopochka props="Заказать торт" />
                 </div>
               </div>
@@ -44,7 +44,7 @@ function main() {
         </div>
       </section>
       <section>
-        <div className="px-40 py-5 self-center">
+        <div className="lg:px-40 md:px-20 py-5 self-center">
           <div className="max-w-7xl">
             <div className="max-h-[60px] px-4 py-5 flex justify-start items-center">
               <div>
@@ -70,7 +70,7 @@ function main() {
         </div>
       </section>
       <section>
-        <div className="px-40 py-5 self-center">
+        <div className="lg:px-40 md:px-20 py-5 self-center">
           <div className="max-w-7xl">
             <div className="max-h-[60px] px-4 py-5 flex justify-start items-center">
               <h2 className="text-2xl font-bold">Отзывы наших клиентов</h2>

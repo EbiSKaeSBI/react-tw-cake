@@ -10,7 +10,7 @@ const MovingCarousel = ({ images }) => {
             key={index}
             src={image}
             alt={`Slide ${index}`}
-            className="w-64 h-64 object-cover mx-4 rounded-xl"
+            className="lg:w-64 lg:h-64 md:w-32 md:h-32 object-cover mx-4 rounded-xl"
           />
         ))}
         {images.map((image, index) => (
@@ -18,7 +18,7 @@ const MovingCarousel = ({ images }) => {
             key={index + images.length}
             src={image}
             alt={`Slide ${index + images.length}`}
-            className="w-64 h-64 object-cover mx-4 rounded-xl"
+            className="lg:w-64 lg:h-64 md:w-32 md:h-32 object-cover mx-4 rounded-xl"
           />
         ))}
       </div>
