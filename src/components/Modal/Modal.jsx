@@ -5,7 +5,7 @@ const Modal = ({ product, onClose, onAddToCart }) => (
         <div className="bg-white p-6 rounded-[30px] shadow-lg w-4/5 max-w-[800px] max-h-[90vh] overflow-y-auto">
             <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex justify-center w-full md:w-1/2">
-                    <img src={product.image} alt={product.name} className="w-full max-h-80 object-cover rounded-lg mb-4" />
+                    <img src={product.image} alt={product.name} className="w-full max-h-80 object-cover rounded-[6px] mb-4" />
                 </div>
                 <div className="flex flex-col justify-between w-full md:w-1/2 px-4">
                     <h2 className="text-2xl font-medium mb-4 text-start">{product.name}</h2>
@@ -17,9 +17,9 @@ const Modal = ({ product, onClose, onAddToCart }) => (
                     </div>
                     <div className="mb-4">
                         <div className="flex gap-3">
-                            <button className="bg-gray-200 text-black p-2 rounded-lg hover:bg-pink-light">Маленький</button>
-                            <button className="bg-gray-200 text-black p-2 rounded-lg hover:bg-pink-light">Средний</button>
-                            <button className="bg-gray-200 text-black p-2 rounded-lg hover:bg-pink-light">Большой</button>
+                            <button className="bg-gray-200 text-black p-2 rounded-2xl mb-4 hover:bg-pink-light">Маленький</button>
+                            <button className="bg-gray-200 text-black p-2 rounded-2xl mb-4 hover:bg-pink-light">Средний</button>
+                            <button className="bg-gray-200 text-black p-2 rounded-2xl mb-4 hover:bg-pink-light">Большой</button>
                         </div>
                     </div>
                     <p className="text-sm text-gray-600 mb-4 max-w-[300px] break-words text-start">{product.description}</p>
