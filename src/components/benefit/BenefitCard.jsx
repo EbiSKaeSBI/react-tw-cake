@@ -61,7 +61,7 @@ const filling = [
 
 const BenefitCard = () => {
     return (
-        <div className="flex  gap-3">
+        <div className="flex md:flex-wrap md:translate-x-7  gap-3">
             {filling.map((item, index) => (
                 <div key={index} className="max-w-[233px] h-[199px] py-4 px-4 rounded-[8px] border-[1px] flex flex-col gap-3">
                     <div className="max-h-6 max-w-[187px] text-start">

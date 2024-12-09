@@ -30,10 +30,10 @@ function main() {
       <section>
         <div className="lg:px-40  md:px-20  py-5 self-center">
           <div className="max-w-7xl mx-auto">
-            <div className="min-h-[480px] relative">
+            <div className="lg:min-h-[480px] md:min-h-[300px] relative">
               <img src={welcome} alt="" className="w-full h-full object-cover" />
               <div className="absolute inset-0 z-20 p-4 flex flex-col">
-                <div className="flex flex-col items-start lg:gap-5 md:gap-3 max-w-max lg:translate-y-[284px] md:translate-y-[142  px]">
+                <div className="flex flex-col items-start lg:gap-5 md:gap-3 max-w-max lg:translate-y-[284px] md:translate-y-[142px]">
                   <h1 className="lg:text-5xl font-bold text-white md:2xl">Добро пожаловать в нашу пекарню!</h1>
                   <p className="lg:text-base text-white md:text-xs">Уникальные торты для ваших особых моментов.</p>
                   <Knopochka props="Заказать торт" />
