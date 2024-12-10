@@ -4,12 +4,12 @@ const Contacts = () => {
     return (
         <>
             <section>
-                <div className="px-40 py-5 self-center">
+                <div className="px-40 md:px-20 py-5 self-center">
                     <div className="max-w-7xl">
                         <div className="lg:min-h-[480px] md:min-h-[300px] relative">
                             <img src={BgContacts} alt="" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 z-20 p-4   flex lg:flex-col md:flex-row ml-[56px] max-w-[848px]">
-                                <div className="flex flex-col lg:self-center lg:gap-5 md:gap-3 max-w-max lg:translate-y-[140px] md:translate-y-[50px]">
+                                <div className="flex flex-col lg:self-center lg:gap-5 md:gap-3 max-w-max lg:translate-y-[180px] md:translate-y-[80px] md:translate-x-[70px]">
                                     <h1 className="lg:text-5xl font-bold text-white md:text-2xl">Контакт</h1>
                                     <div className="flex justify-between bg-white px-3 py-2 lg:w-[480px] md:w-[320px] rounded-3xl items-center">
                                         <div className="flex gap-3 items-center">

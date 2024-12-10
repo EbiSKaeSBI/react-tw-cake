@@ -24,45 +24,56 @@ const images2 = [
   "https://i.pinimg.com/564x/08/39/09/083909bb22092ce248788a403247a9df.jpg"
 ]
 
-function main() {
+function Main() {
   return (
     <>
+      {/* Welcome Section */}
       <section>
-        <div className="lg:px-40  md:px-20  py-5 self-center">
+        <div className="lg:px-40 md:px-20 sm:px-4 px-2 py-5 self-center">
           <div className="max-w-7xl mx-auto">
-            <div className="lg:min-h-[480px] md:min-h-[300px] relative">
-              <img src={welcome} alt="" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 z-20 p-4 flex flex-col">
-                <div className="flex flex-col items-start lg:gap-5 md:gap-3 max-w-max lg:translate-y-[284px] md:translate-y-[142px]">
-                  <h1 className="lg:text-5xl font-bold text-white md:2xl">Добро пожаловать в нашу пекарню!</h1>
-                  <p className="lg:text-base text-white md:text-xs">Уникальные торты для ваших особых моментов.</p>
-                  <Knopochka props="Заказать торт" />
-                </div>
+            <div className="relative lg:min-h-[480px] md:min-h-[300px] min-h-[200px]">
+              <img
+                src={welcome}
+                alt="Добро пожаловать"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 z-20 p-4 flex flex-col items-start justify-end gap-3 lg:gap-5 text-white">
+                <h1 className="lg:text-5xl md:text-3xl text-xl font-bold">
+                  Добро пожаловать в нашу пекарню!
+                </h1>
+                <p className="lg:text-base md:text-sm text-xs">
+                  Уникальные торты для ваших особых моментов.
+                </p>
+                <Knopochka props="Заказать торт" />
               </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div className="lg:px-40 md:px-20 py-5 self-center">
-          <div className="max-w-7xl">
-            <div className="max-h-[60px] px-4 py-5 flex justify-start items-center">
-              <div>
-                <h2 className="text-2xl  font-bold">Будущие торты</h2>
-              </div>
+        <div className="lg:px-40 md:px-20 sm:px-4 px-2 py-5 self-center">
+          <div className="max-w-7xl mx-auto">
+            <div className="px-4 py-5 flex justify-start items-center">
+              <h2 className="lg:text-2xl text-xl font-bold">Будущие торты</h2>
             </div>
             <div className="px-4 py-4">
-              <div className="gap-3 max-h-96 max-w-5xl">
+              <div className="gap-3 max-w-full">
                 <Carousel images={images} />
               </div>
             </div>
-            <div className="max-h-[60px] px-4 py-5 flex justify-start items-center">
-              <div>
-                <h2 className="text-2xl  font-bold">Что нового?</h2>
-              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What's New Section */}
+      <section>
+        <div className="lg:px-40 md:px-20 sm:px-4 px-2 py-5 self-center">
+          <div className="max-w-7xl mx-auto">
+            <div className="px-4 py-5 flex justify-start items-center">
+              <h2 className="lg:text-2xl text-xl font-bold">Что нового?</h2>
             </div>
             <div className="px-4 py-4">
-              <div className="gap-3 max-h-96 max-w-5xl">
+              <div className="gap-3 max-w-full">
                 <Carousel images={images2} />
               </div>
             </div>
@@ -70,17 +81,20 @@ function main() {
         </div>
       </section>
       <section>
-        <div className="lg:px-40 md:px-20 py-5 self-center">
-          <div className="max-w-7xl">
-            <div className="max-h-[60px] px-4 py-5 flex justify-start items-center">
-              <h2 className="text-2xl font-bold">Отзывы наших клиентов</h2>
+        <div className="lg:px-40 md:px-20 sm:px-4 px-2 py-5 self-center">
+          <div className="max-w-7xl mx-auto">
+            <div className="px-4 py-5">
+              <h2 className="lg:text-2xl text-xl font-bold">Отзывы наших клиентов</h2>
             </div>
-          </div>
             <Feedback />
+          </div>
         </div>
       </section>
     </>
   );
 }
 
-export default main;
+export default Main;
+
+
+
