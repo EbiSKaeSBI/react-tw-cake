@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import ProductCard from '../components/CARD/Card';
-import Modal from '../components/Modal/Modal';
+import { useState } from 'react';
+import ProductCard from '../components/card/card.jsx';
+import Modal from '../components/modal/modal.jsx';
 
 const products = [
     {
@@ -8,7 +8,7 @@ const products = [
       name: 'Ванильный торт',
       price: 2000,
       available: 2,
-      image: 'https://i.pinimg.com/control/564x/ee/ca/de/eecade9a4ccb35324114d037e3e91a88.jpg',
+      image: 'https://i.pinimg.com/1200x/92/0a/03/920a0343dda62744d78ab756d5efcedf.jpg',
       description: 'Легкий ванильный торт с нежным сливочным кремом.',
       ingredients: [
         'мука',
@@ -26,7 +26,7 @@ const products = [
       name: 'Шоколадный фейерверк торт',
       price: 2500,
       available: 3,
-      image: 'https://i.pinimg.com/control/564x/41/2b/42/412b4230f2f1c0d7b15c8afba1a6413e.jpg',
+      image: 'https://i.pinimg.com/736x/0b/19/3d/0b193d304b80da27a042d869793e8175.jpg',
       description: 'Плотный шоколадный торт с темным ганашем.',
       ingredients: [
         'мука',
@@ -43,7 +43,7 @@ const products = [
       name: 'Фруктовый тарт',
       price: 1500,
       available: 5,
-      image: 'https://i.pinimg.com/control/564x/53/71/25/537125b34d18eeffa9c088932b535567.jpg',
+      image: 'https://i.pinimg.com/736x/f7/42/ed/f742ed21bcf61d29baef0dac6fca7466.jpg',
       description: 'Тарт с свежими фруктами и кремом патисьер.',
       ingredients: [
         'мука',
@@ -60,7 +60,7 @@ const products = [
       name: 'Красный бархат',
       price: 2200,
       available: 4,
-      image: 'https://i.pinimg.com/control/736x/d8/17/b0/d817b0f0d2b3136f33900dcca09d89d7.jpg',
+      image: 'https://i.pinimg.com/1200x/0d/c4/ad/0dc4ad8a989bd77f7fb63759cc57d1eb.jpg',
       description: 'Красный бархат с кремом из сливочного сыра.',
       ingredients: [
         'мука',
@@ -78,7 +78,7 @@ const products = [
       name: 'Клубничное парфе',
       price: 1000,
       available: 6,
-      image: 'https://i.pinimg.com/control/564x/9b/3f/8c/9b3f8cf5a0cb75aa559ee25bd839f23f.jpg',
+      image: 'https://i.pinimg.com/736x/b2/8c/1a/b28c1a1a0c21d5e69e3ff296e881380b.jpg',
       description: 'Легкое клубничное парфе с йогуртом.',
       ingredients: [
         'клубника',
@@ -94,7 +94,7 @@ const products = [
       name: 'Тирамису',
       price: 1800,
       available: 2,
-      image: 'https://i.pinimg.com/736x/f9/56/2a/f9562ad1110e6c989452ec051096d27b.jpg',
+      image: 'https://i.pinimg.com/736x/ad/21/6c/ad216c6bc4d6657e82daa6da1c0082e4.jpg',
       description: 'Итальянский десерт с маскарпоне и кофе.',
       ingredients: [
         'маскарпоне',
@@ -110,7 +110,7 @@ const products = [
       name: 'Бискотти с миндалем',
       price: 600,
       available: 10,
-      image: 'https://i.pinimg.com/564x/cf/42/7e/cf427ec7f300d872ed306975d0f8cfa1.jpg',
+      image: 'https://i.pinimg.com/736x/73/19/cf/7319cfeeec041484add5dd6674b0c761.jpg',
       description: 'Хрустящее итальянское печенье с миндалем.',
       ingredients: [
         'мука',
@@ -126,7 +126,7 @@ const products = [
       name: 'Круассан',
       price: 300,
       available: 15,
-      image: 'https://i.pinimg.com/564x/64/da/b4/64dab420786f113e5e1a240ffbb389e1.jpg',
+      image: 'https://i.pinimg.com/736x/f3/91/33/f391336a92721cd7524639096c909707.jpg',
       description: 'Классический французский круассан с маслом.',
       ingredients: [
         'мука',
@@ -142,7 +142,7 @@ const products = [
       name: 'Маффин с черникой',
       price: 500,
       available: 8,
-      image: 'https://i.pinimg.com/control/564x/d9/f9/c4/d9f9c409bf3fff547d13e16cb80eb1aa.jpg',
+      image: 'https://i.pinimg.com/1200x/a9/af/63/a9af63ecacbf04bda22ca2a50a97d12e.jpg',
       description: 'Нежный маффин с черникой.',
       ingredients: [
         'мука',
@@ -158,7 +158,7 @@ const products = [
       name: 'Эклеры с ванильным кремом',
       price: 1200,
       available: 7,
-      image: 'https://i.pinimg.com/control/564x/ab/88/cc/ab88cc46a10cdd9d2cb50699671b3b59.jpg',
+      image: 'https://i.pinimg.com/736x/e0/3a/c6/e03ac6831f45291da56a715b05b9b09c.jpg',
       description: 'Французские эклеры с ванильным кремом.',
       ingredients: [
         'мука',
@@ -174,7 +174,7 @@ const products = [
       name: 'Чизкейк Нью-Йорк',
       price: 2000,
       available: 5,
-      image: 'https://i.pinimg.com/control/564x/32/04/66/3204669c72e0c7bd26ad026be83a879c.jpg',
+      image: 'https://i.pinimg.com/1200x/78/d1/44/78d144a49e522c363ecf75449a40ef25.jpg',
       description: 'Классический чизкейк Нью-Йорк с кремом.',
       ingredients: [
         'сливочный сыр',
@@ -190,7 +190,7 @@ const products = [
       name: 'Пирог с яблоками',
       price: 1300,
       available: 4,
-      image: 'https://i.pinimg.com/564x/08/39/09/083909bb22092ce248788a403247a9df.jpg',
+      image: 'https://i.pinimg.com/736x/13/81/26/13812639bef9b7dd39bd5cb5261034e8.jpg',
       description: 'Домашний яблочный пирог с корицей.',
       ingredients: [
         'мука',

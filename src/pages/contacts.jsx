@@ -1,5 +1,5 @@
 import BgContacts from "../assets/contacts.png"
-import Knopochka from "../components/button/Knopochka";
+import Button from "../components/button/button.jsx";
 const Contacts = () => {
     return (
       <>
@@ -18,7 +18,7 @@ const Contacts = () => {
                         </svg>
                         <input type="text" placeholder="Искать" className="outline-none max-[480px]:w-full" />
                       </div>
-                      <Knopochka className="px-5" props="Поиск" />
+                      <Button className="px-5">Поиск</Button>
                     </div>
                   </div>
                 </div>

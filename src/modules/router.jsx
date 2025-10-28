@@ -1,14 +1,14 @@
 import {createBrowserRouter} from 'react-router-dom';
-import Mainpage from '../pages/mainpage.jsx';
-import AboutUs from '../pages/AboutUs.jsx';
-import Catalog from '../pages/Catalog.jsx';
-import Contact from '../pages/Contacts.jsx';
+import MainPage from '../pages/main-page.jsx';
+import AboutUs from '../pages/about-us.jsx';
+import Catalog from '../pages/catalog.jsx';
+import Contact from '../pages/contacts.jsx';
 
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Mainpage />,
+        element: <MainPage />,
     },
     {
         path: '/about',

@@ -1,18 +1,18 @@
-import { useState } from "react";
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar.jsx";
-import Footer from "./components/footer/podval.jsx";
-import {RouterProvider } from "react-router-dom";
-import { router } from "./modules/router.jsx";
-
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./pages/main-page.jsx";
+import Catalog from "./pages/catalog.jsx";
+import AboutUs from "./pages/about-us.jsx";
+import Contacts from "./pages/contacts.jsx";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <RouterProvider router={router} />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/catalog" element={<Catalog />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/contacts" element={<Contacts />} />
+    </Routes>
   );
 }
 

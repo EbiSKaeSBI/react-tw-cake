@@ -1,26 +1,27 @@
 import { useState } from "react";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
-function NavBar() {
+function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <>
             <header className="flex justify-between items-center text-black py-6 px-4 md:px-5 drop-shadow-md">
-                <a href="#" className="flex gap-2 items-center">
+                <Link to="/" className="flex gap-2 items-center">
                     <img src={logo} alt="Logo" className="max-w-[16px] max-h-[16px]" />
                     <p className="lg:text-2xl font-bold md:text-xl sm:text-lg">Vovik</p>
-                </a>
+                </Link>
 
-                {/* Desktop Navigation Menu */}
+
                 <ul className="hidden sm:flex gap-4 self-center">
-                    <li><a href="/" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Главная</a></li>
-                    <li><a href="/about" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">О нас</a></li>
-                    <li><a href="/catalog" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Каталог</a></li>
-                    <li><a href="/contacts" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Контакты</a></li>
+                    <li><Link to="/" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Главная</Link></li>
+                    <li><Link to="/about" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">О нас</Link></li>
+                    <li><Link to="/catalog" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Каталог</Link></li>
+                    <li><Link to="/contacts" className="p-2 py-1 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Контакты</Link></li>
                 </ul>
 
-                {/* Mobile Hamburger Menu */}
+
                 <button
                     className="sm:hidden p-2 text-black hover:text-gray-700"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -46,10 +47,10 @@ function NavBar() {
             {menuOpen && (
                 <nav className="sm:hidden bg-gray-100 border-t border-gray-300">
                     <ul className="flex flex-col gap-2 p-4">
-                        <li><a href="/" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Главная</a></li>
-                        <li><a href="/about" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">О нас</a></li>
-                        <li><a href="/catalog" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Каталог</a></li>
-                        <li><a href="/contacts" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Контакты</a></li>
+                        <li><Link to="/" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Главная</Link></li>
+                        <li><Link to="/about" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">О нас</Link></li>
+                        <li><Link to="/catalog" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Каталог</Link></li>
+                        <li><Link to="/contacts" className="p-2 text-sm font-semibold hover:bg-gray-700 hover:text-white rounded-md transition-all">Контакты</Link></li>
                     </ul>
                 </nav>
             )}
@@ -57,4 +58,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+export default Header;
