@@ -10,7 +10,7 @@ function Header() {
             <header className="flex justify-between items-center text-black py-6 px-4 md:px-5 drop-shadow-md">
                 <Link to="/" className="flex gap-2 items-center">
                     <img src={logo} alt="Logo" className="max-w-[16px] max-h-[16px]" />
-                    <p className="lg:text-2xl font-bold md:text-xl sm:text-lg">Vovik</p>
+                    <p className="lg:text-2xl font-bold md:text-xl sm:text-lg">Bakery</p>
                 </Link>
 
 
@@ -43,7 +43,7 @@ function Header() {
                 </button>
             </header>
 
-            {/* Mobile Dropdown Menu */}
+
             {menuOpen && (
                 <nav className="sm:hidden bg-gray-100 border-t border-gray-300">
                     <ul className="flex flex-col gap-2 p-4">

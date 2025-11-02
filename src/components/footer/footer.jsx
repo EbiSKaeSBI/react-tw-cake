@@ -15,12 +15,12 @@ const items = [
     {
         name: FaFacebook,
         icon: <FaFacebook />,
-        link: 'https://t.me/hamster_kombat_boT/start?startapp=kentId662135656'
+        link: 'https://www.facebook.com/',
     },
     {
         name: FaInstagram,
         icon: <FaInstagram />,
-        link: 'https://t.me/blum/app?startapp=ref_svqoaxj1K9'
+        link: 'https://instagram.com'
     },
     {
         name: FaYoutube,
@@ -30,7 +30,7 @@ const items = [
     {
         name: FaTelegram,
         icon: <FaTelegram />,
-        link: 'https://t.me/monika2013'
+        link: 'https://t.me/telegram',
     }
 ];
 
